@@ -96,3 +96,43 @@ Metrics used:
 ```bash
 git clone https://github.com/yourusername/mental-health-prediction.git
 cd mental-health-prediction
+
+
+
+================================================FAQ=================================================
+What kind of machine learning task is performed in this project?
+
+This project performs a supervised classification task, predicting whether an individual has sought mental health treatment based on survey features.
+
+Which feature(s) do you expect to be most predictive of treatment-seeking?
+
+Features like family history, work interference, supervisor and coworkers support, and ease of leave tend to be most predictive due to their direct effect on attitudes towards seeking help.
+
+How do you handle missing or inconsistent data in this survey-based project?
+
+Typical approaches include imputation for numeric/categorical missing values, normalization of inconsistent category labels, and omitting rows with excessive missingness.
+
+Why do you use multiple models, and how do you select the best one?
+
+Using multiple models allows comparison and selection of the best-performing algorithm via validation metrics like accuracy, precision, recall, and F1 score. The model with the highest balanced performance is chosen.
+
+How does workplace support affect the likelihood of seeking treatment according to the data?
+
+Workplace support (supportive coworkers/supervisors, easy leave) positively correlates with seeking treatment; stigma and lack of support discourage it.
+
+How do you validate the reliability of your model results?
+
+Reliability is established by splitting the dataset into training/testing sets, using cross-validation, and comparing multiple metrics (accuracy, precision, recall, F1) across models.
+
+What limitations do you see in using this dataset for real-world conclusions?
+
+Limitations include bias and underreporting due to stigma, limited demographic representation, survey self-selection, and relatively small dataset size.
+
+How might class imbalance affect your results, and how do you manage it?
+
+If far more people answered one way, models could be biased; methods such as rebalancing (resampling), weighted loss functions, or evaluation with balanced metrics are used.
+
+If you had access to additional features, what would improve the model further?
+
+Additional features like clinical history, company policies, recent stressors, and access to external support resources could enhance model accuracy.
+
