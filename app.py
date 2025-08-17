@@ -1,10 +1,15 @@
 import streamlit as st
 import pandas as pd
-import joblib
+import cloudpickle
+
+with open("mh_pipeline.pkl", "rb") as f:
+    pipe = cloudpickle.load(f)
 from datetime import datetime
 
 # Load pipeline
-pipe = joblib.load("mh_pipeline.pkl")
+
+
+
 
 st.set_page_config(page_title="Mental Health Treatment Prediction", layout="centered")
 
