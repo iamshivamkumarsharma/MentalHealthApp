@@ -1,6 +1,5 @@
 streamlit
-pandas
-numpy
-scikit-learn
-lightgbm
+scikit-learn==1.5.2
 joblib
+numpy==1.24.4
+pandas
